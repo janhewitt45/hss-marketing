@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Updates Archive | Hutton Scientific Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --dark-grey: #555559;
+    --green: #85a312;
+    --blue: #569bbe;
+    --purple: #853175;
+    --dark-green: #5e7e2b;
+    --ink: #2a2a2d;
+    --warm-bg: #faf8f4;
+    --warm-mid: #f0ece3;
+    --rule: #ddd9d0;
+    --muted: #888884;
+  }
+
+  body {
+    font-family: 'Carlito', sans-serif;
+    background: var(--warm-bg);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  .masthead {
+    background: var(--ink);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 52px 32px 44px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .masthead-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .masthead-kicker::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 48px;
+    background: var(--green);
+  }
+
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--white);
+  }
+
+  .masthead h1 em { font-style: italic; color: var(--green); }
+
+  .masthead-sub {
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 12px;
+  }
+
+  .masthead-stripe {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: var(--green);
+  }
+
+  .page-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 52px 32px 80px;
+  }
+
+  .year-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .year-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .month-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 24px 22px 20px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+
+  .month-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--green);
+  }
+
+  .month-card:hover { border-color: var(--green); }
+
+  .month-card .month-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .month-card .month-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .month-card .month-arrow {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+  }
+
+  .month-card.latest::before { background: var(--purple); }
+  .month-card.latest .month-name { color: var(--purple); }
+  .month-card.latest .month-arrow { color: var(--purple); }
+
+  .latest-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--purple);
+    color: var(--white);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    width: fit-content;
+  }
+
+  .page-footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 28px 32px;
+    font-size: 13px;
+  }
+
+  .page-footer strong { color: rgba(255,255,255,0.7); }
+
+  @media (max-width: 600px) {
+    .masthead-inner, .page-body { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="masthead-kicker">Hutton Scientific Services</p>
+    <h1>Marketing Updates <em>Archive</em></h1>
+    <p class="masthead-sub">Monthly reports prepared by Jan Hewitt — James Hutton Institute</p>
+  </div>
+  <div class="masthead-stripe"></div>
+</header>
+
+<main class="page-body">
+
+  <p class="year-label">2026</p>
+
+  <div class="cards-grid">
+
+    <a class="month-card latest" href="may-2026.html">
+      <span class="latest-badge">Latest</span>
+      <p class="month-name">May 2026</p>
+      <p class="month-desc">Campaigns, events, social growth, UKAS, Fruit for the Future, NPIC webinar and more.</p>
+      <p class="month-arrow">View update →</p>
+    </a>
+
+    <!-- Add new months here as they're created, e.g.: -->
+    <!--
+    <a class="month-card" href="june-2026.html">
+      <p class="month-name">June 2026</p>
+      <p class="month-desc">Short summary sentence here.</p>
+      <p class="month-arrow">View update →</p>
+    </a>
+    -->
+
+  </div>
+
+</main>
+
+<footer class="page-footer">
+  <p><strong>Hutton Scientific Services</strong>: Marketing Updates Archive</p>
+  <p style="margin-top:6px">Prepared by Jan Hewitt &nbsp;·&nbsp; James Hutton Institute</p>
+</footer>
+
+</body>
+</html>
