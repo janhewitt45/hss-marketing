@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Update: September 2026 | Hutton Scientific Services</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --white: #ffffff;
+    --dark-grey: #555559;
+    --green: #85a312;
+    --blue: #569bbe;
+    --purple: #853175;
+    --dark-green: #5e7e2b;
+    --ink: #2a2a2d;
+    --warm-bg: #faf8f4;
+    --warm-mid: #f0ece3;
+    --rule: #ddd9d0;
+    --muted: #888884;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Carlito', sans-serif;
+    background: var(--warm-bg);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    background: var(--ink);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 32px 48px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .masthead-kicker {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .masthead-kicker::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 48px;
+    background: var(--green);
+  }
+
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 60px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .masthead h1 em {
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .masthead-meta {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .masthead-meta span { display: flex; align-items: center; }
+
+  .masthead-stripe {
+    height: 5px;
+    background: var(--green);
+    position: relative;
+    z-index: 2;
+  }
+
+  /* STICKY NAV */
+  .nav-strip {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-strip-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+
+  .nav-strip a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 14px 16px;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .nav-strip a:hover { color: var(--ink); border-bottom-color: var(--green); }
+
+  /* MAIN LAYOUT */
+  .page-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+  }
+
+  /* SNAPSHOT SECTION */
+  .snapshot-section {
+    padding: 52px 0 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+    max-width: 100px;
+  }
+
+  .snapshot-intro {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--dark-grey);
+    line-height: 1.5;
+    max-width: 620px;
+    margin-bottom: 36px;
+    padding-left: 20px;
+    border-left: 3px solid var(--green);
+  }
+
+  /* ACTIVITY GRID */
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .activity-item {
+    background: var(--white);
+    padding: 18px 20px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: background 0.15s;
+  }
+
+  .activity-item:hover { background: var(--warm-mid); }
+
+  .activity-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+
+  .dot-green { background: var(--green); }
+  .dot-blue { background: var(--blue); }
+  .dot-purple { background: var(--purple); }
+  .dot-darkgreen { background: var(--dark-green); }
+
+  .activity-text {
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--dark-grey);
+  }
+
+  .activity-text em {
+    display: block;
+    margin-top: 8px;
+    font-style: italic;
+    color: var(--green);
+    font-size: 13.5px;
+  }
+
+  .inline-link {
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(133,163,18,0.35);
+  }
+
+  .inline-link:hover { border-bottom-color: var(--green); }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    text-decoration: none;
+    border: 1px solid rgba(133,163,18,0.4);
+    border-radius: 3px;
+    padding: 5px 12px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .read-more::after { content: '→'; font-size: 13px; }
+
+  .read-more:hover {
+    background: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+  }
+
+  /* ATTENDED BADGE */
+  .attended-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--purple);
+    padding: 4px 10px 4px 8px;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+
+  .attended-badge::before { content: '★'; font-size: 10px; }
+
+  /* METRICS SECTION */
+  .metrics-section {
+    padding: 52px 0 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .metrics-intro {
+    font-size: 16px;
+    color: var(--dark-grey);
+    max-width: 560px;
+    margin-bottom: 36px;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .metric-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 24px 20px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+  }
+
+  .mc-green::before { background: var(--green); }
+  .mc-blue::before { background: var(--blue); }
+  .mc-purple::before { background: var(--purple); }
+  .mc-darkgreen::before { background: var(--dark-green); }
+
+  .metric-platform {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .metric-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .metric-value.pending {
+    font-size: 22px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .metric-label {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .metric-note {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted);
+    background: var(--warm-mid);
+    border-left: 3px solid var(--rule);
+    padding: 12px 16px;
+    border-radius: 0 4px 4px 0;
+    margin-top: 8px;
+  }
+
+  /* NEXT STEPS */
+  .nextsteps-section { padding: 52px 0 40px; }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  @media (max-width: 620px) { .two-col { grid-template-columns: 1fr; } }
+
+  .col-head {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dark-grey);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .action-list, .ideas-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .action-list li, .ideas-list li {
+    font-size: 14.5px;
+    color: var(--dark-grey);
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .action-list li::before {
+    content: '';
+    width: 16px;
+    height: 1px;
+    background: var(--green);
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+
+  .ideas-list li::before {
+    content: '◆';
+    font-size: 7px;
+    color: var(--purple);
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  /* FOOTER */
+  .page-footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.4);
+    text-align: center;
+    padding: 32px;
+    font-size: 13px;
+  }
+
+  .page-footer strong { color: rgba(255,255,255,0.7); font-weight: 700; }
+
+  .archive-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    text-decoration: none;
+  }
+
+  .archive-link:hover { text-decoration: underline; }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .masthead-inner { padding: 40px 20px 36px; }
+    .page-body { padding: 0 20px 60px; }
+    .nav-strip-inner { padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="masthead-kicker">Monthly Marketing Update</p>
+    <h1>September in <em>Review</em></h1>
+    <div class="masthead-meta">
+      <span>September 2026</span>
+      <span>Hutton Scientific Services</span>
+      <span>Prepared by Jan Hewitt</span>
+    </div>
+  </div>
+  <div class="masthead-stripe"></div>
+</header>
+
+<nav class="nav-strip" aria-label="Page sections">
+  <div class="nav-strip-inner">
+    <a href="#snapshot">Snapshot</a>
+    <a href="#metrics">Social Metrics</a>
+    <a href="#next-steps">Next Steps</a>
+    <a href="#ideas">Ideas</a>
+  </div>
+</nav>
+
+<main class="page-body">
+
+  <!-- SNAPSHOT -->
+  <section class="snapshot-section" id="snapshot">
+    <p class="section-label">What happened in September</p>
+    <p class="snapshot-intro">A month of building foundations: the Immersive Suite web proposal, new Hutton Soils page, landing page briefs and a plan to bring the MLA microsite home, alongside a full calendar of social campaigns and media releases.</p>
+
+    <div class="activity-grid">
+
+      <div class="activity-item">
+        <span class="activity-dot dot-green"></span>
+        <p class="activity-text">Held the Fruit for the Future debrief lunch to share feedback from external attendees, gather feedback from internal stakeholders and start planning the next event.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <div class="activity-body">
+          <p class="activity-text">Created the Immersive Suite web proposal as step one in marketing the Hutton Hub and Immersive Suite.</p>
+          <a class="read-more" href="https://github.com/janhewitt45/hss-marketing/blob/main/immersive%20suite%20web%20proposal.pdf" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <p class="activity-text">Wrote landing page briefs for HCA and Soils IQ, which are now being built.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <p class="activity-text">Created the Hutton Soils page for the main Hutton website to capture existing business from gardeners and farmers.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <div class="activity-body">
+          <p class="activity-text">Started a plan to migrate or recreate the MLA microsite on the main Hutton site.</p>
+          <a class="read-more" href="https://github.com/janhewitt45/hss-marketing/blob/main/MLA%20to%20Hutton%20Content%20Map.xlsx" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <div class="activity-body">
+          <p class="activity-text">Designed an outreach plan for the new non-GMP MLA services.</p>
+          <a class="read-more" href="https://github.com/janhewitt45/hss-marketing/blob/main/mla%20new%20services%20outreach%20plan.pdf" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <p class="activity-text">Purchased domains for HSS and Soils IQ.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <p class="activity-text">Ran social media campaigns on Highland Charm, the potato breeding programme, the PAS110 update, Climate Venture Exchange, the pollination project (also providing text for the internal screensaver), Glen Mor, an events round up and Fruit Attraction.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-purple"></span>
+        <div class="activity-body">
+          <p class="activity-text">Created messaging for the 'Can I pick your brain?' question from Ali Karly and Antonia.</p>
+          <a class="read-more" href="https://github.com/janhewitt45/hss-marketing/blob/main/pick%20your%20brain%20messaging.pdf" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-green"></span>
+        <p class="activity-text">Audited all event collateral and reordered essential kit with the new logo.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-darkgreen"></span>
+        <p class="activity-text">Researched a chatbot for triaging Soils IQ enquiries from the landing page.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <div class="activity-body">
+          <p class="activity-text">Built the social media content plan for October and November.</p>
+          <a class="read-more" href="https://janhewitt45.github.io/marketing-todo/content-calendar.html" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <p class="activity-text">PAS110: wrote an update with video for the RMAS newsletter, created a mailbox and added it to the website, and started work on updated content to publish when the service goes live.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-green"></span>
+        <p class="activity-text">Created a video of the phenotyping platform for Ramin to use as event collateral.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <p class="activity-text">Media releases: Pollination Project, Climate Venture Exchange and the 2026 Reynolds Cup win (with help from Matteo and Joyce).</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-purple"></span>
+        <p class="activity-text">Sponsorship: Aberdeen Ambassador Awards.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-blue"></span>
+        <p class="activity-text">Ran the <a class="inline-link" href="https://www.instagram.com/mds_updates" target="_blank" rel="noopener">MDS Instagram takeover</a> for the whole month.</p>
+      </div>
+
+      <div class="activity-item">
+        <span class="activity-dot dot-purple"></span>
+        <p class="activity-text">Carried out competitor mapping research for biodiversity training.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics-section" id="metrics">
+    <p class="section-label">Social media metrics</p>
+    <p class="metrics-intro">Steady output across both channels this month: 28 LinkedIn posts with a 14.8% engagement rate and 85 new followers, plus 7 Instagram posts at 9.5% engagement.</p>
+
+    <div class="metrics-grid">
+      <div class="metric-card mc-blue">
+        <p class="metric-platform">LinkedIn</p>
+        <p class="metric-value">28</p>
+        <p class="metric-label">Posts this month</p>
+      </div>
+      <div class="metric-card mc-green">
+        <p class="metric-platform">LinkedIn</p>
+        <p class="metric-value">14.8<span style="font-size:22px">%</span></p>
+        <p class="metric-label">Engagement rate</p>
+      </div>
+      <div class="metric-card mc-darkgreen">
+        <p class="metric-platform">LinkedIn</p>
+        <p class="metric-value">270</p>
+        <p class="metric-label">Profile visits</p>
+      </div>
+      <div class="metric-card mc-purple">
+        <p class="metric-platform">LinkedIn</p>
+        <p class="metric-value">85</p>
+        <p class="metric-label">New followers</p>
+      </div>
+      <div class="metric-card mc-blue">
+        <p class="metric-platform">Instagram</p>
+        <p class="metric-value">7</p>
+        <p class="metric-label">Posts this month</p>
+        <p class="metric-label" style="margin-top:8px;font-style:italic">Plus 11 posts for the MDS Instagram takeover</p>
+      </div>
+      <div class="metric-card mc-green">
+        <p class="metric-platform">Instagram</p>
+        <p class="metric-value">9.5<span style="font-size:22px">%</span></p>
+        <p class="metric-label">Engagement rate</p>
+      </div>
+    </div>
+
+    <p class="metric-note">These metrics are for the HSS account. We also manage or contribute to several other accounts every month.</p>
+  </section>
+
+  <!-- NEXT STEPS + IDEAS -->
+  <section class="nextsteps-section" id="next-steps">
+    <p class="section-label">Looking ahead</p>
+    <div class="two-col">
+
+      <div>
+        <p class="col-head">Next Steps</p>
+        <ul class="action-list">
+          <li>Develop the marketing framework and timelines for the new Soils IQ package</li>
+          <li>Fruit for the Future follow-up and reflection</li>
+          <li>Immersive Suite: new page, prices, packages, showreel and professional photos</li>
+          <li>Develop collaborations with Summer House Drinks and others</li>
+          <li>PAS110 campaign message development, webpage edits and ABDA membership</li>
+          <li>Soft fruit signage at Invergowrie</li>
+          <li>Develop the HCA marketing plan alongside Shimadzu</li>
+          <li>Action wall art for the new cannabis lab</li>
+          <li>Transfer the MLA microsite to the main Hutton site and update it with new techniques</li>
+          <li>Enter the Scottish Life Sciences Awards with Wayfinders and the Glensaugh Climate Positive Farming Initiative</li>
+          <li>Propose talks for Groundswell</li>
+          <li>Confirm the graphic for the cannabis lab wall</li>
+        </ul>
+      </div>
+
+      <div id="ideas">
+        <p class="col-head">Ideas Pipeline</p>
+        <ul class="ideas-list">
+          <li>Story of fruit breeding showreel, tying in APGC</li>
+          <li>Fruit boxes for supermarket buyers to showcase soft fruit</li>
+          <li>Develop a game or app for soft fruit events, like 'Spud Roulette'</li>
+          <li>Develop automated customer pathways including reminder and renewal nudges</li>
+          <li>Pop-up insight boxes on webpages</li>
+          <li>Mini email course (3 to 5 days)</li>
+          <li>Annual benchmark report: 'state of soil'</li>
+          <li>'Which test do I need?' tool: a short interactive quiz</li>
+          <li>'Tested at Hutton' mark: a co-branding badge</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <p><strong>Hutton Scientific Services</strong>: Monthly Marketing Update, September 2026</p>
+  <p style="margin-top:6px">Prepared by Jan Hewitt &nbsp;·&nbsp; James Hutton Institute</p>
+  <a class="archive-link" href="index.html">← View all updates</a>
+</footer>
+
+</body>
+</html>
